@@ -1,0 +1,457 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: "Handlee", cursive;
+  font-family: "Karma", serif;
+  font-size: 40px;
+}
+
+header nav a {
+  margin-right: 20px;
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  padding: 7px 20px;
+}
+
+header nav a:hover,
+header nav a.active {
+  color: white;
+  background-color: black;
+}
+
+.gambar {
+  position: relative;
+}
+
+.gambar img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.gambar .homeText {
+  font-size: 50px;
+  width: 45vh;
+  position: absolute;
+  top: 10px;
+  color: white;
+  margin-left: 20px;
+  padding: 20px;
+  font-family: "Handlee", cursive;
+  text-align: left;
+}
+
+/* test css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.5; /* Optional */
+  text-align: center;
+}
+
+#profile {
+  padding: 65px;
+  background-color: lightgrey;
+}
+
+#profile img {
+  height: 350px;
+  border-radius: 50%;
+}
+
+#content {
+  width: 55%;
+  margin: 0 auto;
+}
+
+#skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+}
+
+.card:hover {
+  background-color: #efefef;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card div {
+  padding: 20px;
+}
+
+hr {
+  margin: 65px;
+}
+
+footer {
+  padding: 30px;
+}
+
+footer a {
+  margin: 0 20px;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1055;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#modal-content {
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  position: relative;
+  top: 80px;
+  max-width: 540px;
+  max-height: 480px;
+  overflow-y: auto;
+}
+
+#close {
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* ini css untuk page gallery */
+
+.garisDibawahNavbar hr {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  border: none;
+  margin-left: -0.1px;
+  margin-top: 5px;
+}
+
+.horizontal h3 {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Kalam", cursive;
+  margin-bottom: -25px;
+}
+
+.produk1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 5vw 2vw;
+}
+
+.produk1 img:hover,
+.produk2 img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.gallery_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card_img img {
+  width: 24vw;
+  height: 15vw;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.produk2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 5vw 2vw;
+  margin-top: -95px;
+}
+
+.gallery_img_potrait {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_img_potrait img {
+  width: 15vw;
+  height: 20vw;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* about us */
+
+.container_about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10vw 7vw;
+}
+.left {
+  width: 30vw;
+}
+.left img {
+  width: 100%;
+}
+.titleAbout {
+  font-size: 4vw;
+}
+.kalam {
+  font-size: 80px;
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+}
+
+.right {
+  width: 50vw;
+}
+
+.subtitleAbout {
+  font-size: 1.5vw;
+  padding-bottom: 2vw;
+  font-family: "Handlee";
+}
+
+.desc_about {
+  font-size: 1.5vw;
+  margin-top: -20px;
+}
+
+.bgabout {
+  background-color: #f9f6f6;
+  padding: 20px;
+}
+
+/* Contact Us */
+
+.ContactUsImage img {
+  width: 80%;
+  height: 700px;
+  margin-top: 40px;
+}
+
+.container_contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin: 5vw 7vw;
+  background-color: #f9f6f6;
+  padding: 30px;
+}
+
+.left_contact {
+  width: 40vw;
+}
+
+.left_title {
+  text-align: left;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.right_contact {
+  width: 50vw;
+}
+
+.right_contact img {
+  width: 60%;
+  margin-left: 200px;
+}
+
+/* Subscribe */
+
+.containerSubs {
+  margin-top: 40px;
+  margin: 50px auto;
+  width: 80%;
+  display: flex;
+  height: 42vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f6f6;
+  padding: 50px 10px 124px 10px;
+}
+
+.details {
+  text-align: left;
+}
+.containerSubs .formSubs {
+  margin-top: 100px;
+  max-width: 800px;
+  width: 100%;
+  /* background: #fff; */
+  padding: 25px 25px;
+  border-radius: 5px;
+}
+
+.userdetail .input-box .details {
+  display: block;
+  font-weight: 550px;
+}
+
+.userdetail .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.userdetail .input-box input:focus,
+.userdetail .input-box input:valid {
+  border-color: black;
+}
+
+.verification {
+  float: left;
+}
+
+.terms {
+  color: red;
+}
+
+form .submit {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .submit input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 550;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, black, white);
+}
+
+form .submit input:hover {
+  background: linear-gradient(-135deg, black, white);
+}
+
+@media (max-width: 800px) {
+  header nav a{
+    font-size: 15px;
+    margin-right: 5px;
+    padding: 7px 10px;
+  }
+
+  .gambar img{
+    width: 100%;
+    height: 47vh;
+  }
+  
+  .gambar .homeText{
+    font-size: 30px;
+    width: 20vh;
+  }
+
+  .horizontal h3{
+    font-size: 30px;
+  }
+
+  .card_img img{
+    width: 95%;
+    height: 95%;
+  }
+  .produk2{
+    padding-top:45px;
+  }
+
+  .container_about{
+    width: 90%;
+  }
+
+
+  .left img{
+    width: 100%;
+    height: 35vh;
+    margin-top: 5px;
+  }
+
+  .left{
+    margin-left: -20px;
+  }
+  .right .titleAbout .kalam{
+    font-size: 35px;
+  }
+
+  .right .subtitleAbout{
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .right .desc_about{
+    font-size: 11px;
+  }
+
+
+  .container_contact{
+    width: 72%;
+    margin-right: 5px;
+    object-fit: cover;
+  }
+  .ContactUsImage img{
+    width: 95%;
+    height: 95%;
+  }
+
+  .left_contact .left_title{
+    font-size: 9px;
+    margin-left: -5px;
+    margin-top: 1vh;
+    width: 160px;
+  }
+  .right_contact img{
+    margin-left: -5px;
+    padding-left: 50px;
+    width: 80%;
+  }
+  .containerSubs .formSubs {
+    max-width: 100%;
+  }
+
+  form .userdetail .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .userdetail::-webkit-scrollbar {
+    width: 0;
+  }
+}
